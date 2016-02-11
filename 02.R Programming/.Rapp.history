@@ -1,0 +1,32 @@
+install.packages("Kernsmooth")
+install.packages("KernSmooth")
+library(KernSmooth)
+getwd()
+dir
+dir ()
+myfunction ()
+ls
+ls
+ls()
+myfunction <- function(x){#
+	y <- rnorm(100)#
+	mean(y)#
+}
+ls()
+myfunction()
+source ("myfunction.R")
+source("myfunction.R")
+source("myfunction.R")
+source("myfunction.R")
+ls
+ls()
+ls()
+source("myfunction.R")
+ls()
+unload
+second(4)
+second(4)
+second(4:10)
+second(4:10)
+ls
+ls()
