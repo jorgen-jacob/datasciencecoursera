@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "corr <- function(directory, threshold = 0) {\n  list_of_files <- list.files(directory,full.names = TRUE)\n  dat <- data.frame()\n  result <- data.frame()\n  for (i in 1:length(list_of_files)){\n    dat <- read.csv(list_of_files[i])\n    dat <- na.omit(dat)\n    corr_value <- cor(dat[2],dat[3])\n    result <- rbind(result,c(i,nrow(dat),corr_value))\n  }\n  colnames(result) <- c(\"id\",\"nobs\",\"corr_value\")\n  result_subset <- result[which(result[, \"nobs\"] >= threshold),]\n  result_vector <- result_subset[,\"corr_value\"]\n}",
+    "created" : 1456042119445.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "425226953",
+    "id" : "4D63FC84",
+    "lastKnownWriteTime" : 1456155546,
+    "last_content_update" : 1456155546527,
+    "path" : "~/Documents/06.Repositories/datasciencecoursera/02.R Programming/corr.R",
+    "project_path" : "corr.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : true,
+    "source_window" : "",
+    "type" : "r_source"
+}

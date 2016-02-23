@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "complete <- function(directory, id = 1:332){\n  list_of_files <- list.files(directory,full.names = TRUE)\n  dat <- data.frame()\n  result <- data.frame()\n  for (i in id){\n    dat <- read.csv(list_of_files[i])\n    dat <- na.omit(dat)\n    result <- rbind(result,c(i,nrow(dat)))\n  }\n  colnames(result) <- c(\"id\",\"nobs\")\n  result\n}\n",
+    "created" : 1455812080307.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "36173432",
+    "id" : "C45A7CF9",
+    "lastKnownWriteTime" : 1456044757,
+    "last_content_update" : 1456044757829,
+    "path" : "~/Documents/06.Repositories/datasciencecoursera/02.R Programming/complete.R",
+    "project_path" : "complete.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : true,
+    "source_window" : "",
+    "type" : "r_source"
+}

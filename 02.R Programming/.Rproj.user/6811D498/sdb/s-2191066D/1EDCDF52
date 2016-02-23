@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "pollutantmean <- function(directory, pollutant, id = 1:332){\n  list_of_files <- list.files(directory,full.names = TRUE)\n  dat <- data.frame()\n  for (i in id){\n    dat <- rbind(dat, read.csv(list_of_files[i]))\n  }\n  mean(dat[,pollutant],na.rm=TRUE)\n}",
+    "created" : 1455810129969.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "217389247",
+    "id" : "1EDCDF52",
+    "lastKnownWriteTime" : 1456044759,
+    "last_content_update" : 1456044759231,
+    "path" : "~/Documents/06.Repositories/datasciencecoursera/02.R Programming/pollutantmean.R",
+    "project_path" : "pollutantmean.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : true,
+    "source_window" : "",
+    "type" : "r_source"
+}
